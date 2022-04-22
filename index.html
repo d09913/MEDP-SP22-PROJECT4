@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>responsive desktop</title>
+  </head>
+
+  <body id="body">
+    <div id="container" class="flex color3">
+      <header class="flex trans color2"></header>
+
+      <main class="flex">
+        <div class="a flex color1 fade">
+          <div class="bars1 hide flex color2"></div>
+          <div class="bars2 flex color2"></div>
+          <div class="bars1 flex color2"></div>
+          <div class="bars2 flex color2"></div>
+          <div class="bars1 flex color2"></div>
+          <div class="bars2 flex color2"></div>
+          <div class="bars1 hide flex color2"></div>
+        </div>
+
+        <div class="b flex">
+          <div class="bigb flex color1 fade">
+            <div class="slidecontainer flex">
+              <input
+                id="slider3"
+                type="range"
+                min="0"
+                max="360"
+                value="100"
+                class="slider range color2 fade"
+              />
+            </div>
+            <div class="slidecontainer">
+              <input
+                id="slider2"
+                class="slider range color2 fade"
+                type="range"
+                min="0"
+                max="360"
+                value="300"
+              />
+            </div>
+            <div class="slidecontainer">
+              <input
+                id="slider1"
+                type="range"
+                min="0"
+                max="360"
+                value="100"
+                class="slider range color2 fade"
+              />
+            </div>
+          </div>
+          <div class="smallb flex">
+            <div class="smallb2 flex color1 fade">
+              <button class="button flex color2 fade" type="button"></button>
+            </div>
+            <div class="smallb2 flex color1 fade">
+              <button class="button flex color2 fade" type="button"></button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="flex trans color2 fade"></footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
