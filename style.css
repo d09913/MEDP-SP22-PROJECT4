@@ -70,7 +70,7 @@ footer {
 }
 
 .trans:hover {
-  background-color: #ffffff10;
+  width: 60%;
   transition-duration: 1s;
 }
 
