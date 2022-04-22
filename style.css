@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+#body {
+  padding: 0px;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+#container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition-duration: 1.6s;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+/*these are to be changed by the sliders*/
+.color1 {
+  /* containers */
+  background-color: hsl(100, 25%, 50%);
+}
+
+.color2 {
+  /* accents */
+  background-color: hsl(300, 50%, 25%);
+}
+
+.color3 {
+  /* background */
+  background-color: hsl(100, 25%, 75%);
+}
+
+header {
+  width: 80%;
+  height: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+footer {
+  width: 80%;
+  height: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.fade {
+  transition-duration: 1.6s;
+}
+/* header and footer hover stuff*/
+
+.trans {
+  transition-duration: 1s;
+}
+
+.trans:hover {
+  background-color: #ffffff10;
+  transition-duration: 1s;
+}
+
+.a {
+  height: 450px;
+  width: 450px;
+  border-radius: 10%;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* hover bars*/
+.bars1 {
+  width: 25px;
+  height: 175px;
+  border-radius: 10px;
+  padding: 20px;
+  transition-duration: 1.6s;
+}
+
+.bars2 {
+  width: 25px;
+  height: 375px;
+  border-radius: 10px;
+  padding: 20px;
+  transition-duration: 1.6s;
+}
+
+.bars1:hover {
+  transition-duration: 1.6s;
+  cursor: pointer;
+  height: 375px;
+}
+
+.bars2:hover {
+  transition-duration: 1.6s;
+  cursor: pointer;
+  height: 175px;
+}
+
+.b {
+  height: 450px;
+  width: 450px;
+  border: 5px dashed 0;
+  border-radius: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: column;
+  align-content: center;
+}
+
+.bigb {
+  height: 45%;
+  width: 100%;
+  border-radius: 40px;
+  margin-bottom: 25px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* slider stuff */
+.slidecontainer {
+  width: 90%;
+}
+
+.slider::-webkit-slider-thumb {
+  /*little slider handles*/
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background: #ffffff50;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider {
+  appearance: none;
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.smallb {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: 5px dashed 0;
+  border-radius: 20px;
+  height: 220px;
+  gap: 20px;
+}
+
+.smallb2 {
+  height: 100%;
+  width: 50%;
+  border-radius: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* the big hover button */
+.button {
+  appearance: none;
+  height: 80%;
+  width: 80%;
+  border: 0;
+  border-radius: 20px;
+  transition-duration: 1.6s;
+  cursor: pointer;
+}
+
+.button:hover {
+  height: 60%;
+  width: 60%;
+  transition-duration: 1.6s;
+}
+
+/*desktop*/
+@media screen and (min-width: 1020px) {
+  main {
+    flex-direction: row;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*tablet*/ /*i know this is a weird workaround but this is the only way i could get it to cooperate with me*/
+@media screen and (max-width: 1020px) and (min-width: 768px) {
+  main {
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+/*mobile*/
+@media screen and (max-width: 767px) {
+  main {
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .hide {
+    display: none;
+  }
+}
